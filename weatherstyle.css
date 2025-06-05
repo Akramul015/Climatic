@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #0057a3;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1rem;
+}
+
+#dark-mode-toggle {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #555;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#location-search {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+#search-btn {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #0057a3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #004687;
+}
+
+/* Weather Card */
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+}
+
+.weather-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.weather-info h2 {
+    font-size: 1.5rem;
+    color: #0057a3;
+}
+
+.weather-info p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Map Section */
+#map {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.map-toggle {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.map-toggle button {
+    padding: 10px;
+    font-size: 1rem;
+    margin: 5px;
+    background-color: #0057a3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.map-toggle button:hover {
+    background-color: #004687;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.weather-card.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.map-toggle button.dark-mode {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+.map-toggle button.dark-mode:hover {
+    background-color: #555555;
+}
+
+#search-btn.dark-mode {
+    background-color: #444444;
+    color: #ffffff;
+}
+
+#search-btn.dark-mode:hover {
+    background-color: #555555;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climatic</title>
+    <link rel="stylesheet" href="weatherstyle.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">Climatic</div>
+            <p id="datetime"></p>
+            <button id="dark-mode-toggle">Toggle Dark Mode</button>
+        </header>
+        <main>
+            <div class="weather-card">
+                <div class="search-container">
+                    <input type="text" id="location-search" placeholder="Enter city name or location" />
+                    <button id="search-btn">Search</button>
+                </div>
+                <div class="weather-info">
+                    <h2 id="city-name">City: -</h2>
+                    <p id="weather">Weather: -</p>
+                    <p id="temperature">Temperature: -</p>
+                </div>
+                <div id="map"></div>
+                <div class="map-toggle">
+                    <button id="normal-map-btn">Normal Map</button>
+                    <button id="satellite-map-btn">Satellite Map</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Climatic. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="weatherscript.js"></script>
+</body>
+</html>
